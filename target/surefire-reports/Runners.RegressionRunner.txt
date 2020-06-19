@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: Runners.RegressionRunner
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 25.36 s <<< FAILURE! - in Runners.RegressionRunner
+Validation of function names(EspoCRM project)  Time elapsed: 7.422 s  <<< FAILURE!
+org.junit.ComparisonFailure: The function name doesn't match expected:<[Home]> but was:<[Accounts]>
+
+Add four new customers(EspoCRM project)  Time elapsed: 1.51 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Volodymyrs-MacBook-Pro.local', ip: '2601:241:4100:1802:0:7d7f:8205:a875%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/p6/d_53fxh53jl...}, goog:chromeOptions: {debuggerAddress: localhost:57639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d0f000eb88d1303d3554ac4dc0f2c954
+

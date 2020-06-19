@@ -1,0 +1,18 @@
+package Runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+
+        features = "src/test/resources/EspoCRM/homePage.feature",
+        glue = "StepDefinitions",
+        monochrome = false,
+        dryRun = false,
+        tags = ""
+)
+
+public class ValFunctionNames {
+}

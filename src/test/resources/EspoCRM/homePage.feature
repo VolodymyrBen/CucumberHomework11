@@ -18,6 +18,7 @@ Feature: EspoCRM project
       | Cases         |
       | Calendar      |
       | Tasks         |
+    And the user clicks the logout button
 
   Scenario Outline: Add four new customers
     Given the user navigate the page

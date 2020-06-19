@@ -114,5 +114,9 @@ public class TestSteps {
     public void the_user_validate_Names_and_Emails(Map<String,String> expected) {
         Assert.assertEquals(expected,homePage.getCustomerInfo());
     }
+    @Then("the user clicks the logout button")
+    public void the_user_clicks_the_logout_button() {
+
+    }
 
 }

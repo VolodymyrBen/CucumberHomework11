@@ -1,96 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="24.931">
-    <testcase classname="EspoCRM project" name="Validation of function names" time="7.326">
-        <failure message="The function name doesn't match expected:&lt;[Home]&gt; but was:&lt;[Accounts]&gt;" type="org.junit.ComparisonFailure">
-            <![CDATA[Given the user navigate the page............................................passed
-When the user open the home page............................................passed
-Then the user validate the function names...................................failed
-
-StackTrace:
-org.junit.ComparisonFailure: The function name doesn't match expected:<[Home]> but was:<[Accounts]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at StepDefinitions.TestSteps.the_user_validate_the_function_names(TestSteps.java:41)
-	at ✽.the user validate the function names(file:///Users/volodymyrbendiukevych/IdeaProjects/Homework11Cucumber/src/test/resources/EspoCRM/homePage.feature:6)
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="6" time="0.248">
+    <testcase classname="EspoCRM project" name="Validation of function names" time="0.052">
+        <skipped>
+            <![CDATA[Given the user navigate the page............................................skipped
+When the user open the home page............................................skipped
+Then the user validate the function names...................................skipped
+And the user clicks the logout button.......................................undefined
 ]]>
-        </failure>
+        </skipped>
     </testcase>
-    <testcase classname="EspoCRM project" name="Add four new customers" time="1.505">
-        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=83.0.4103.106)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Volodymyrs-MacBook-Pro.local', ip: '2601:241:4100:1802:0:7d7f:8205:a875%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/p6/d_53fxh53jl...}, goog:chromeOptions: {debuggerAddress: localhost:57639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: d0f000eb88d1303d3554ac4dc0f2c954" type="org.openqa.selenium.StaleElementReferenceException">
-            <![CDATA[Given the user navigate the page............................................passed
-When the user open the Accounts.............................................passed
-Then the user clicks the Create Account button..............................failed
+    <testcase classname="EspoCRM project" name="Add four new customers" time="0.012">
+        <system-out>
+            <![CDATA[Given the user navigate the page............................................skipped
+When the user open the Accounts.............................................skipped
+Then the user clicks the Create Account button..............................skipped
 And the user provide customer information "Valerka", "val@gmail.com", "2145 BroadStone Ave.", "Plano", "TX", "43056", "USA", "Customer", "Education", "Mobile", "4696784566".skipped
 And the user validate the new customers is created "Valerka", "val@gmail.com", "2145 BroadStone Ave.", "Plano", "TX", "43056", "USA", "Customer", "Education", "Mobile", "4696784566".skipped
-
-StackTrace:
-org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Volodymyrs-MacBook-Pro.local', ip: '2601:241:4100:1802:0:7d7f:8205:a875%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/p6/d_53fxh53jl...}, goog:chromeOptions: {debuggerAddress: localhost:57639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d0f000eb88d1303d3554ac4dc0f2c954
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at StepDefinitions.TestSteps.the_user_clicks_the_Create_Account_button(TestSteps.java:52)
-	at ✽.the user clicks the Create Account button(file:///Users/volodymyrbendiukevych/IdeaProjects/Homework11Cucumber/src/test/resources/EspoCRM/homePage.feature:25)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="EspoCRM project" name="Add four new customers 2" time="6.599">
-        <system-out>
-            <![CDATA[Given the user navigate the page............................................passed
-When the user open the Accounts.............................................passed
-Then the user clicks the Create Account button..............................passed
-And the user provide customer information "Roman", "pat@gmail.com", "2145 BroadStone Ave.", "Richardson", "TX", "23467", "USA", "Reseller", "Retail", "Office", "2346784559".passed
-And the user validate the new customers is created "Roman", "pat@gmail.com", "2145 BroadStone Ave.", "Richardson", "TX", "23467", "USA", "Reseller", "Retail", "Office", "2346784559".passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="EspoCRM project" name="Add four new customers 3" time="3.645">
+    <testcase classname="EspoCRM project" name="Add four new customers 2" time="0.005">
         <system-out>
-            <![CDATA[Given the user navigate the page............................................passed
-When the user open the Accounts.............................................passed
-Then the user clicks the Create Account button..............................passed
-And the user provide customer information "Donald", "arny@gmail.com", "23 Lenina", "San Francisco", "CA", "61720", "USA", "Investor", "Culture", "Fax", "4496784557".passed
-And the user validate the new customers is created "Donald", "arny@gmail.com", "23 Lenina", "San Francisco", "CA", "61720", "USA", "Investor", "Culture", "Fax", "4496784557".passed
+            <![CDATA[Given the user navigate the page............................................skipped
+When the user open the Accounts.............................................skipped
+Then the user clicks the Create Account button..............................skipped
+And the user provide customer information "Roman", "pat@gmail.com", "2145 BroadStone Ave.", "Richardson", "TX", "23467", "USA", "Reseller", "Retail", "Office", "2346784559".skipped
+And the user validate the new customers is created "Roman", "pat@gmail.com", "2145 BroadStone Ave.", "Richardson", "TX", "23467", "USA", "Reseller", "Retail", "Office", "2346784559".skipped
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="EspoCRM project" name="Add four new customers 4" time="3.685">
+    <testcase classname="EspoCRM project" name="Add four new customers 3" time="0.004">
         <system-out>
-            <![CDATA[Given the user navigate the page............................................passed
-When the user open the Accounts.............................................passed
-Then the user clicks the Create Account button..............................passed
-And the user provide customer information "Hasan", "goodguy@gmail.com", "2245 Chicago ave", "Los Angeles", "CA", "35429", "USA", "Partner", "Banking", "Mobile", "1096784524".passed
-And the user validate the new customers is created "Hasan", "goodguy@gmail.com", "2245 Chicago ave", "Los Angeles", "CA", "35429", "USA", "Partner", "Banking", "Mobile", "1096784524".passed
+            <![CDATA[Given the user navigate the page............................................skipped
+When the user open the Accounts.............................................skipped
+Then the user clicks the Create Account button..............................skipped
+And the user provide customer information "Donald", "arny@gmail.com", "23 Lenina", "San Francisco", "CA", "61720", "USA", "Investor", "Culture", "Fax", "4496784557".skipped
+And the user validate the new customers is created "Donald", "arny@gmail.com", "23 Lenina", "San Francisco", "CA", "61720", "USA", "Investor", "Culture", "Fax", "4496784557".skipped
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="EspoCRM project" name="Validation Names and Emails" time="2.047">
+    <testcase classname="EspoCRM project" name="Add four new customers 4" time="0.003">
         <system-out>
-            <![CDATA[Given the user navigate the page............................................passed
-When the user clicks the three dot burgerButton.............................passed
-Then the user clicks the Users..............................................passed
-Then the user validate Names and Emails.....................................passed
+            <![CDATA[Given the user navigate the page............................................skipped
+When the user open the Accounts.............................................skipped
+Then the user clicks the Create Account button..............................skipped
+And the user provide customer information "Hasan", "goodguy@gmail.com", "2245 Chicago ave", "Los Angeles", "CA", "35429", "USA", "Partner", "Banking", "Mobile", "1096784524".skipped
+And the user validate the new customers is created "Hasan", "goodguy@gmail.com", "2245 Chicago ave", "Los Angeles", "CA", "35429", "USA", "Partner", "Banking", "Mobile", "1096784524".skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="EspoCRM project" name="Validation Names and Emails" time="0.003">
+        <system-out>
+            <![CDATA[Given the user navigate the page............................................skipped
+When the user clicks the three dot burgerButton.............................skipped
+Then the user clicks the Users..............................................skipped
+Then the user validate Names and Emails.....................................skipped
 ]]>
         </system-out>
     </testcase>

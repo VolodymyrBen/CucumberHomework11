@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-19T16:05:30.384Z",
+        "start_timestamp": "2020-06-19T19:20:25.303Z",
         "line": 3,
         "name": "Validation of function names",
         "description": "",
@@ -11,8 +11,8 @@
         "after": [
           {
             "result": {
-              "duration": 655139000,
-              "status": "passed"
+              "duration": 361000,
+              "status": "skipped"
             },
             "match": {
               "location": "StepDefinitions.Hooks.tearDonw(io.cucumber.java.Scenario)"
@@ -24,8 +24,8 @@
         "steps": [
           {
             "result": {
-              "duration": 3425666000,
-              "status": "passed"
+              "duration": 1212000,
+              "status": "skipped"
             },
             "line": 4,
             "name": "the user navigate the page",
@@ -36,8 +36,8 @@
           },
           {
             "result": {
-              "duration": 791629000,
-              "status": "passed"
+              "duration": 524000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "the user open the home page",
@@ -48,9 +48,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: The function name doesn\u0027t match expected:\u003c[Home]\u003e but was:\u003c[Accounts]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat StepDefinitions.TestSteps.the_user_validate_the_function_names(TestSteps.java:41)\n\tat ✽.the user validate the function names(file:///Users/volodymyrbendiukevych/IdeaProjects/Homework11Cucumber/src/test/resources/EspoCRM/homePage.feature:6)\n",
-              "duration": 2412804000,
-              "status": "failed"
+              "duration": 2102000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "the user validate the function names",
@@ -130,20 +129,29 @@
               }
             ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "the user clicks the logout button",
+            "match": {},
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-06-19T16:05:37.723Z",
-        "line": 30,
+        "start_timestamp": "2020-06-19T19:20:25.371Z",
+        "line": 31,
         "name": "Add four new customers",
         "description": "",
         "id": "espocrm-project;add-four-new-customers;;2",
         "after": [
           {
             "result": {
-              "duration": 591495000,
-              "status": "passed"
+              "duration": 12000,
+              "status": "skipped"
             },
             "match": {
               "location": "StepDefinitions.Hooks.tearDonw(io.cucumber.java.Scenario)"
@@ -155,10 +163,10 @@
         "steps": [
           {
             "result": {
-              "duration": 132810000,
-              "status": "passed"
+              "duration": 517000,
+              "status": "skipped"
             },
-            "line": 23,
+            "line": 24,
             "name": "the user navigate the page",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_navigate_the_page()"
@@ -167,10 +175,10 @@
           },
           {
             "result": {
-              "duration": 52757000,
-              "status": "passed"
+              "duration": 312000,
+              "status": "skipped"
             },
-            "line": 24,
+            "line": 25,
             "name": "the user open the Accounts",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_open_the_Accounts()"
@@ -179,11 +187,10 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d83.0.4103.106)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Volodymyrs-MacBook-Pro.local\u0027, ip: \u00272601:241:4100:1802:0:7d7f:8205:a875%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.5\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/p6/d_53fxh53jl...}, goog:chromeOptions: {debuggerAddress: localhost:57639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: d0f000eb88d1303d3554ac4dc0f2c954\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat StepDefinitions.TestSteps.the_user_clicks_the_Create_Account_button(TestSteps.java:52)\n\tat ✽.the user clicks the Create Account button(file:///Users/volodymyrbendiukevych/IdeaProjects/Homework11Cucumber/src/test/resources/EspoCRM/homePage.feature:25)\n",
-              "duration": 715173000,
-              "status": "failed"
+              "duration": 289000,
+              "status": "skipped"
             },
-            "line": 25,
+            "line": 26,
             "name": "the user clicks the Create Account button",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_clicks_the_Create_Account_button()"
@@ -192,10 +199,10 @@
           },
           {
             "result": {
-              "duration": 546000,
+              "duration": 495000,
               "status": "skipped"
             },
-            "line": 26,
+            "line": 27,
             "name": "the user provide customer information \"Valerka\", \"val@gmail.com\", \"2145 BroadStone Ave.\", \"Plano\", \"TX\", \"43056\", \"USA\", \"Customer\", \"Education\", \"Mobile\", \"4696784566\"",
             "match": {
               "arguments": [
@@ -250,10 +257,10 @@
           },
           {
             "result": {
-              "duration": 518000,
+              "duration": 483000,
               "status": "skipped"
             },
-            "line": 27,
+            "line": 28,
             "name": "the user validate the new customers is created \"Valerka\", \"val@gmail.com\", \"2145 BroadStone Ave.\", \"Plano\", \"TX\", \"43056\", \"USA\", \"Customer\", \"Education\", \"Mobile\", \"4696784566\"",
             "match": {
               "arguments": [
@@ -309,16 +316,16 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-19T16:05:39.233Z",
-        "line": 31,
+        "start_timestamp": "2020-06-19T19:20:25.389Z",
+        "line": 32,
         "name": "Add four new customers",
         "description": "",
         "id": "espocrm-project;add-four-new-customers;;3",
         "after": [
           {
             "result": {
-              "duration": 47000,
-              "status": "passed"
+              "duration": 12000,
+              "status": "skipped"
             },
             "match": {
               "location": "StepDefinitions.Hooks.tearDonw(io.cucumber.java.Scenario)"
@@ -330,10 +337,10 @@
         "steps": [
           {
             "result": {
-              "duration": 151066000,
-              "status": "passed"
+              "duration": 493000,
+              "status": "skipped"
             },
-            "line": 23,
+            "line": 24,
             "name": "the user navigate the page",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_navigate_the_page()"
@@ -342,10 +349,10 @@
           },
           {
             "result": {
-              "duration": 66369000,
-              "status": "passed"
+              "duration": 302000,
+              "status": "skipped"
             },
-            "line": 24,
+            "line": 25,
             "name": "the user open the Accounts",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_open_the_Accounts()"
@@ -354,10 +361,10 @@
           },
           {
             "result": {
-              "duration": 107743000,
-              "status": "passed"
+              "duration": 280000,
+              "status": "skipped"
             },
-            "line": 25,
+            "line": 26,
             "name": "the user clicks the Create Account button",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_clicks_the_Create_Account_button()"
@@ -366,10 +373,10 @@
           },
           {
             "result": {
-              "duration": 6036902000,
-              "status": "passed"
+              "duration": 555000,
+              "status": "skipped"
             },
-            "line": 26,
+            "line": 27,
             "name": "the user provide customer information \"Roman\", \"pat@gmail.com\", \"2145 BroadStone Ave.\", \"Richardson\", \"TX\", \"23467\", \"USA\", \"Reseller\", \"Retail\", \"Office\", \"2346784559\"",
             "match": {
               "arguments": [
@@ -424,10 +431,10 @@
           },
           {
             "result": {
-              "duration": 235530000,
-              "status": "passed"
+              "duration": 654000,
+              "status": "skipped"
             },
-            "line": 27,
+            "line": 28,
             "name": "the user validate the new customers is created \"Roman\", \"pat@gmail.com\", \"2145 BroadStone Ave.\", \"Richardson\", \"TX\", \"23467\", \"USA\", \"Reseller\", \"Retail\", \"Office\", \"2346784559\"",
             "match": {
               "arguments": [
@@ -483,16 +490,16 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-19T16:05:45.837Z",
-        "line": 32,
+        "start_timestamp": "2020-06-19T19:20:25.404Z",
+        "line": 33,
         "name": "Add four new customers",
         "description": "",
         "id": "espocrm-project;add-four-new-customers;;4",
         "after": [
           {
             "result": {
-              "duration": 77000,
-              "status": "passed"
+              "duration": 10000,
+              "status": "skipped"
             },
             "match": {
               "location": "StepDefinitions.Hooks.tearDonw(io.cucumber.java.Scenario)"
@@ -504,10 +511,10 @@
         "steps": [
           {
             "result": {
-              "duration": 164344000,
-              "status": "passed"
+              "duration": 499000,
+              "status": "skipped"
             },
-            "line": 23,
+            "line": 24,
             "name": "the user navigate the page",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_navigate_the_page()"
@@ -516,10 +523,10 @@
           },
           {
             "result": {
-              "duration": 62502000,
-              "status": "passed"
+              "duration": 278000,
+              "status": "skipped"
             },
-            "line": 24,
+            "line": 25,
             "name": "the user open the Accounts",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_open_the_Accounts()"
@@ -528,10 +535,10 @@
           },
           {
             "result": {
-              "duration": 77713000,
-              "status": "passed"
+              "duration": 573000,
+              "status": "skipped"
             },
-            "line": 25,
+            "line": 26,
             "name": "the user clicks the Create Account button",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_clicks_the_Create_Account_button()"
@@ -540,10 +547,10 @@
           },
           {
             "result": {
-              "duration": 3138531000,
-              "status": "passed"
+              "duration": 497000,
+              "status": "skipped"
             },
-            "line": 26,
+            "line": 27,
             "name": "the user provide customer information \"Donald\", \"arny@gmail.com\", \"23 Lenina\", \"San Francisco\", \"CA\", \"61720\", \"USA\", \"Investor\", \"Culture\", \"Fax\", \"4496784557\"",
             "match": {
               "arguments": [
@@ -598,10 +605,10 @@
           },
           {
             "result": {
-              "duration": 199950000,
-              "status": "passed"
+              "duration": 484000,
+              "status": "skipped"
             },
-            "line": 27,
+            "line": 28,
             "name": "the user validate the new customers is created \"Donald\", \"arny@gmail.com\", \"23 Lenina\", \"San Francisco\", \"CA\", \"61720\", \"USA\", \"Investor\", \"Culture\", \"Fax\", \"4496784557\"",
             "match": {
               "arguments": [
@@ -657,16 +664,16 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-19T16:05:49.485Z",
-        "line": 33,
+        "start_timestamp": "2020-06-19T19:20:25.413Z",
+        "line": 34,
         "name": "Add four new customers",
         "description": "",
         "id": "espocrm-project;add-four-new-customers;;5",
         "after": [
           {
             "result": {
-              "duration": 65000,
-              "status": "passed"
+              "duration": 13000,
+              "status": "skipped"
             },
             "match": {
               "location": "StepDefinitions.Hooks.tearDonw(io.cucumber.java.Scenario)"
@@ -678,10 +685,10 @@
         "steps": [
           {
             "result": {
-              "duration": 157531000,
-              "status": "passed"
+              "duration": 306000,
+              "status": "skipped"
             },
-            "line": 23,
+            "line": 24,
             "name": "the user navigate the page",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_navigate_the_page()"
@@ -690,10 +697,10 @@
           },
           {
             "result": {
-              "duration": 52655000,
-              "status": "passed"
+              "duration": 265000,
+              "status": "skipped"
             },
-            "line": 24,
+            "line": 25,
             "name": "the user open the Accounts",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_open_the_Accounts()"
@@ -702,10 +709,10 @@
           },
           {
             "result": {
-              "duration": 76932000,
-              "status": "passed"
+              "duration": 340000,
+              "status": "skipped"
             },
-            "line": 25,
+            "line": 26,
             "name": "the user clicks the Create Account button",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_clicks_the_Create_Account_button()"
@@ -714,10 +721,10 @@
           },
           {
             "result": {
-              "duration": 3192452000,
-              "status": "passed"
+              "duration": 459000,
+              "status": "skipped"
             },
-            "line": 26,
+            "line": 27,
             "name": "the user provide customer information \"Hasan\", \"goodguy@gmail.com\", \"2245 Chicago ave\", \"Los Angeles\", \"CA\", \"35429\", \"USA\", \"Partner\", \"Banking\", \"Mobile\", \"1096784524\"",
             "match": {
               "arguments": [
@@ -772,10 +779,10 @@
           },
           {
             "result": {
-              "duration": 203595000,
-              "status": "passed"
+              "duration": 477000,
+              "status": "skipped"
             },
-            "line": 27,
+            "line": 28,
             "name": "the user validate the new customers is created \"Hasan\", \"goodguy@gmail.com\", \"2245 Chicago ave\", \"Los Angeles\", \"CA\", \"35429\", \"USA\", \"Partner\", \"Banking\", \"Mobile\", \"1096784524\"",
             "match": {
               "arguments": [
@@ -831,16 +838,16 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-19T16:05:53.173Z",
-        "line": 36,
+        "start_timestamp": "2020-06-19T19:20:25.423Z",
+        "line": 37,
         "name": "Validation Names and Emails",
         "description": "",
         "id": "espocrm-project;validation-names-and-emails",
         "after": [
           {
             "result": {
-              "duration": 45000,
-              "status": "passed"
+              "duration": 11000,
+              "status": "skipped"
             },
             "match": {
               "location": "StepDefinitions.Hooks.tearDonw(io.cucumber.java.Scenario)"
@@ -852,10 +859,10 @@
         "steps": [
           {
             "result": {
-              "duration": 154624000,
-              "status": "passed"
+              "duration": 291000,
+              "status": "skipped"
             },
-            "line": 37,
+            "line": 38,
             "name": "the user navigate the page",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_navigate_the_page()"
@@ -864,10 +871,10 @@
           },
           {
             "result": {
-              "duration": 49185000,
-              "status": "passed"
+              "duration": 291000,
+              "status": "skipped"
             },
-            "line": 38,
+            "line": 39,
             "name": "the user clicks the three dot burgerButton",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_clicks_the_three_dot_burgerButton()"
@@ -876,10 +883,10 @@
           },
           {
             "result": {
-              "duration": 50483000,
-              "status": "passed"
+              "duration": 272000,
+              "status": "skipped"
             },
-            "line": 39,
+            "line": 40,
             "name": "the user clicks the Users",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_clicks_the_Users()"
@@ -888,10 +895,10 @@
           },
           {
             "result": {
-              "duration": 1791071000,
-              "status": "passed"
+              "duration": 892000,
+              "status": "skipped"
             },
-            "line": 40,
+            "line": 41,
             "name": "the user validate Names and Emails",
             "match": {
               "location": "StepDefinitions.TestSteps.the_user_validate_Names_and_Emails(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"

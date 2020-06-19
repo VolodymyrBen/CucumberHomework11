@@ -116,7 +116,7 @@ public class TestSteps {
     }
     @Then("the user clicks the logout button")
     public void the_user_clicks_the_logout_button() {
-
+        homePage.loginButton.click();
     }
 
 }
